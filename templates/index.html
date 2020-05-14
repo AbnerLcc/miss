@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>支付页面</title>
+</head>
+<body>
+<form action="http://127.0.0.1:8000/index/" method="post" >
+    {% csrf_token %}
+    <input type="text"  name="price">
+    <input type="submit">
+</form>
+</body>
+</html>
